@@ -318,3 +318,10 @@ if (shareBtn) {
     window.open(whatsappUrl, '_blank');
   };
 }
+
+const rayaBtn = document.getElementById("rayaBtn");
+if (rayaBtn) {
+    rayaBtn.onclick = () => {
+        window.open("https://forms.gle/JGVR6DjpukAXVLVX9", "_blank");
+    };
+}
