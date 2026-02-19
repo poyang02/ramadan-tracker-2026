@@ -213,3 +213,35 @@ input {
 .share-btn:active, .secondary-btn:active {
     transform: scale(0.95);
 }
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Slightly tighter gap for 3 buttons */
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.raya-btn {
+    flex: 1.2; /* Slightly wider than the others */
+    background: linear-gradient(45deg, #ffd700, #ffae00);
+    color: #000 !important; /* Black text for high contrast */
+    text-decoration: none;
+    padding: 12px 5px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    transition: transform 0.2s;
+    border: none;
+}
+
+.raya-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ensure all buttons in the header stay balanced on small screens */
+.share-btn, .secondary-btn {
+    flex: 1;
+    font-size: 0.8rem; /* Shrink font slightly to fit 3 buttons across */
+}
